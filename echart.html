@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"><link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     body{
+            background-size:100% 26px;
+            background-color: #0ae;
+            background-image: -webkit-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent 100%);
+            background-image: -moz-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent 100%);
+            background-image: -ms-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent 100%);
+            background-image: -o-linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent 100%);
+            background-image: linear-gradient(rgba(255, 255, 255, .3) 50%, transparent 50%, transparent 100%);
+        }
+    </style>
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/highcharts-more.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/themes/sand-signika.js"></script>
+</head>
+<body>
+<div class="patterns pt1"></div>
+<div id="container" style="min-width: 300px; max-width: 400px; height: 400px; margin: 0 auto"></div>
+<script>
+    var chart = Highcharts.chart('container', {
+        chart: {
+            polar: true,
+            type: 'line'
+        },
+        title: {
+            text: '杀伤与防御',
+            x: 0
+        },
+        pane: {
+            size: '90%'
+        },
+        xAxis: {
+            categories: ['技巧', '防御', '反应', '速度',
+                '接受时间', '杀伤'],
+            tickmarkPlacement: 'on',
+            lineWidth:0
+        },
+        yAxis: {
+            gridLineInterpolation: 'polygon',
+            lineWidth: 0,
+            min:0
+        },
+        tooltip: {
+            shared: true
+            /*pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'*/
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top',
+            y:10,
+            layout: 'vertical'
+        },
+        series: [{
+            name: '杀伤力',
+            data: [6, 6, 9, 9, 9, 20],
+            pointPlacement: 'on'
+        }, {
+            name: '防御力',
+            data: [8, 5, 5, 5, 9, 9],
+            pointPlacement: 'on'
+        }]
+    });
+</script>
+</body>
+</html>

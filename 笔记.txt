@@ -1,0 +1,25 @@
+background－size的属性（宽度,高度）
+
+1.linear-gradient是属于CSS3中Gradient中的两个属性一个，这两个属性分别为linear-gradient（线性渐变）
+和radial-gradient（径性渐变）,其中linear-gradient线性渐变呈现线性变化，大家一看名称就可以知道这相当
+于是直线变化，比如充左上角到右下角的变化，或者从上到下，而radial-gradient径性渐变呈现径性变化，这便
+是大家经常见到的圆圈渐变效果，从图像的中间向四周进行变化，像是大家仍块石头到河里荡起的涟漪一样。而本
+片博客则是讲解linear-gradient,当然，linear-gradient和radial-gradient是相通的，
+使用方法一样，只是呈现的效果不同而已。
+例如1.1: background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%,
+                                                 transparent 25%,
+                                                 transparent 50%,
+                                                 rgba(255, 255, 255, .15) 50%,
+                                                 rgba(255, 255, 255, .15) 75%,
+                                                 transparent 75%,
+                                                 transparent 100%);
+释:45deg开始起到25%为rgba(255, 255, 255, .15)色值,25%~50%为透明的transparent,
+50%~75%为rgba(255,255,255,.15),75%~100%为透明的transparent
+
+
+
+
+
+a.第一个参数 可以是 top ，left,bottom,right 或者10deg ，表示开始的位置;
+b.后面紧跟颜色（可以添加位置占比）;
+
