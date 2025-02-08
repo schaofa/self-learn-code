@@ -1,0 +1,14 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.
+
+node_modules
+.DS_Store
+dist
+
+# Logs
+logs
+*.log
+
+.git
+.hg
+.svn
