@@ -1,0 +1,7 @@
+.vscode
+node_modules
+web-front-app
+*.zip
+*.mp4
+wwwroot
+

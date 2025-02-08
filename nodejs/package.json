@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "爬虫",
+  "main": "爬虫.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.12.0",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  }
+}
